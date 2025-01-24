@@ -1,11 +1,11 @@
 /* Общие стили */
 body {
-    background-image: url('фон.jpeg'),url('фон1.png');
+    background-image:url('фон.jpeg'), url('фон1.png');
     background-repeat: no-repeat, repeat;
     background-size:cover, cover;
     background-color: #EEF5FF;
     background-position:top, center -250px;
-    padding: 1rem 11rem;
+
     font-family: 'Forma DJR Cyrillic Deck', sans-serif;
     margin: 0;
     color: #002B41;
@@ -34,21 +34,23 @@ body {
 /* Шапка */
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-    gap: 10px;
+    gap: 40px;
+    padding-left: 12.5rem;
+}
+
+.logo img{
+    text-align: center;
+    margin: 0;
+    height: 30px;
+    width: 40px;
 }
 
 .logo {
-    line-height: 1;
-    text-align: center;
-}
-
-.logo h3 {
     margin: 0;
-    font-size: 15px;
-    font-weight: bold;
+    height: 20px;
+    width: 30px;
 }
 
 nav ul {
@@ -79,7 +81,7 @@ nav ul li a {
     padding: 0.5rem 1rem;
     border-radius: 100px;
     transition: background-color 0.3s ease;
-    font-size: 15px;
+    font-size: 11px;
     font-family: 'Forma DJR Cyrillic Deck Reg';
 }
 
@@ -125,6 +127,9 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 /* Основной контент */
+main{
+    padding-left: 12.5rem;
+}
 .hero {
     text-align: left;
     margin-top: 2rem;
@@ -164,10 +169,12 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 .hero p {
-    width: 30%;
+    width: 25%;
     font-size: 1rem;
     line-height: 17px;
     font-family: 'Forma DJR Cyrillic Deck Reg';
+    margin: 20px 0;
+    margin-bottom: 71px;
 }
 
 h1+p{
@@ -177,14 +184,14 @@ h1+p{
 .features {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 3rem;
+    margin-top: 4rem;
     background-color:#EEF5FF ;
     border-radius: 40px;
-    max-width: 90%;
-    gap: 20px;
-    justify-content: space-between;
+    max-width: 1100px;
+    gap: 30px;
     align-items: center;
     padding: 25px;
+
 
 }
 
@@ -193,16 +200,17 @@ h1+p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 17%;
+    width: 18%;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 25px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 5px;
 }
 
 .feature h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #002B41;
     margin-bottom: 0.75rem;
 }
@@ -211,6 +219,7 @@ h1+p{
     font-size: 0.7rem;
     color: #002B41;
     line-height: 1.5;
+    margin: 0;
 }
 .feature img{
     height: 110px;
@@ -230,7 +239,7 @@ h1+p{
 
 .surfing h1{
     font-size: 5rem;
-    margin-top: 190px ;
+    margin-top: 150px ;
     line-height: 1px;
 }
 .surfing p{
@@ -250,8 +259,6 @@ h1+p{
     display: flex; 
     gap: 10px; 
     max-width: 1100px; 
-    margin: 0 auto; 
-
 }
 .left-image {
     flex: 2; 
@@ -264,7 +271,7 @@ h1+p{
     gap: 10px;
 
 }
-img {
+.surfing img {
     width: 100%; 
     height: auto;
     border-radius: 20px; 
@@ -274,6 +281,7 @@ img {
 .no{
     height: 400px;
     line-height: 0px;
+    margin-top: -30px;
 }
 .no p:nth-child(1){
     font-family:  'Forma DJR Cyrillic Deck', sans-serif;
@@ -283,6 +291,7 @@ img {
     margin-left: 30px;
     margin: 0;
     margin-top: 190px;
+    width: 1100px;
 }
 .no img{
     height: 10px;
@@ -301,7 +310,7 @@ img {
     font-size: 36px;
     margin-left: 30px;
     margin: 0;
-
+    width: 1100px;
 }
 
 
@@ -341,13 +350,13 @@ img {
     max-width: 1000px;
     background-color: white; 
     border-radius: 35px; 
-    margin-top: 40px;
+    margin-top: 10px;
     border: 17px solid #EEF5FF;
 }
 .girl img {
     width: 450px;
     height: auto;
-
+    border-radius: 20px;
 }
 .награда {
     flex: 1;
@@ -364,7 +373,7 @@ img {
     height: 35px;
     width: 35px;
     margin-left: 410px;
-    margin-top: 40px;
+    margin-top: 35px;
 }
 .лучший h2 {
     margin: 10px;
@@ -379,9 +388,488 @@ img {
     color: #385462;
     margin-top: 10px;
 }
-.точки {
+.точки img{
     width: 45px;
     height: 11px;
     margin-top: 40px;
     margin-left: 500px;
+}
+
+
+
+.education h1,p{
+    display: inline-block;
+    margin: 0;
+}
+.education h1{
+    font-family:'Forma DJR Cyrillic Deck' ;
+    font-size: 5rem;
+    margin-top: 150px;
+    margin-bottom: -50px;
+}
+.education p{
+    font-family:'Panton Rust Script SemiBold', sans-serif;
+    color:#FF3A35;
+    font-size: 3rem;
+    margin-left: 20px;
+}
+.programs-content {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.programs-card {
+    width: 40% ;
+    padding: 20px;
+    padding-top: 100px;
+    background-color: #fff;
+    color: black;
+    border-radius: 40px;
+    position:static;
+}
+.card-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card-logo{
+    height: 100px;
+}
+.card-logo img{
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    margin-left: 170px;
+    transform: translateY(25px);
+}
+.card-logo1 img{
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    margin-top: -260px;
+    margin-left: 740px;
+    transform: translateY(110px);
+}
+.card-price {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.card-price .old-price {
+    font-family:'Forma DJR Cyrillic Deck Reg';
+    text-decoration: line-through;
+    color: #385462;
+    font-size: 27px;
+    margin-top: 20px;
+}
+.card-price .new-price {
+    font-family:'Forma DJR Cyrillic Deck' ;
+    font-size: 50px;
+    color: #002B41;
+    margin-bottom: 30px;
+}
+.card-info .тариф p {
+    font-family:'Forma DJR Cyrillic Deck Reg' ;
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-left: 220px;
+    color: #002B41;
+}
+.card-info .card-title {
+    font-family:'Forma DJR Cyrillic Deck' ;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-left: 165px;
+    color: #002B41;
+}
+.card-info .dlit{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+.dlit .тариф1 p{
+    font-family:'Forma DJR Cyrillic Deck Reg' ;
+    color: #002B41;
+    font-size: 15px;
+    margin: 0 15px;
+}
+.dlit .тариф2 p{
+    font-family:'Forma DJR Cyrillic Deck Reg' ;
+    color: #002B41;
+    font-size: 15px;
+    margin: 0 13px;
+}
+
+.dlit .тариф1 p:nth-child(2){
+    font-family:'Forma DJR Cyrillic Deck Reg' ;
+    color: #002B41;
+    font-size: 18px;
+    margin: 0 15px;
+    margin-top: 6px;
+}
+.dlit .тариф2 p:nth-child(2){
+    font-family:'Forma DJR Cyrillic Deck Reg' ;
+    color: #002B41;
+    font-size: 18px;
+    margin: 0 13px;
+    margin-top: 6px;
+}
+.card-info .dlit img{
+    height: 50px;
+    width: 50px;
+    border-radius: 0;
+    margin-left: 30px;
+}
+
+.card-info .spis{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.spis img{
+    height: 30px;
+    width: 30px;
+}
+.spis p{
+    font-family:'Forma DJR Cyrillic Deck Reg' ;
+    font-size: 20px;
+    color: #002B41;
+    line-height: 17px;
+}
+
+.card-button {
+    font-family:'Forma DJR Cyrillic Deck' ;
+    background-color: #ed1c24;
+    color: #fff;
+    padding: 20px 15px;
+    border: none;
+    border-radius: 100px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.card-button:hover {
+    background-color: #810408;
+}
+
+.card-button1 {
+    font-family:'Forma DJR Cyrillic Deck' ;
+    background-color: #ed1c24;
+    color: #fff;
+    padding: 20px 15px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 100px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.card-button1:hover {
+    background-color: #810408;
+}
+
+
+.sale h1,p{
+    display: inline-block;
+    margin-left: 30px;
+}
+.sale h1{
+    font-family:'Forma DJR Cyrillic Deck' ;
+    font-size: 5rem;
+    margin-top: 150px;
+
+}
+.sale p{
+    font-family:'Panton Rust Script SemiBold', sans-serif;
+    color:#FF3A35;
+    font-size: 3rem;
+    margin-left: 20px;
+}
+.sale img{
+    height: 40px;
+    width: 90px;
+    margin-left: 500px;
+}
+.sales {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -130px;
+    margin-top: -110px;
+}
+.sales img{
+    margin: 0;
+    height: 280px;
+    width: 280px;
+    border: 25px solid #EEF5FF;
+    border-radius: 45px;
+}
+.sales .доски img{
+    width: 150px;
+    height: 470px;
+    border: 0;
+}
+.sales .доски1 img{
+    width: 150px;
+    height: 470px;
+    border: 0;
+
+}
+
+
+.text1 p{
+    font-family:'Forma DJR Cyrillic Deck' ;
+    font-size: 35px;
+    color: #002B41;
+    max-width: 95%;
+}
+.text1 img{
+    height: 10px;
+    width: 650px;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: -70px;
+}
+.text1 p:nth-child(1){
+    line-height: 40px;
+    margin-top: 170px;
+}
+.text1 p:nth-child(3){
+    line-height: 40px;
+    margin-top: -10px;
+}
+
+
+.запись{
+    padding: 0;
+    margin: 0;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; /* Скрываем всё, что выходит за пределы контейнера */
+
+}
+.запись h1,p{
+    display: inline-block;
+    margin-left: 30px;
+}
+.запись h1{
+    font-family:'Forma DJR Cyrillic Deck' ;
+    font-size: 5rem;
+    margin-top: 150px;
+
+}
+.запись p{
+    font-family:'Panton Rust Script SemiBold', sans-serif;
+    color:#FF3A35;
+    font-size: 3rem;
+    margin-left: 20px;
+}
+
+
+.анкета input[type='text'], .анкета input[type='tel']{
+    height: 60px;
+    width: 270px;
+    border-radius: 30px;
+    border: 1px solid #38546280;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+.выбор1{
+    height: 60px;
+    width: 566px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #38546280;
+    font-family:'Forma DJR Cyrillic Deck Reg' ;
+    color: #002B41;
+    text-indent: 17px;
+    appearance: none;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.анкета .выбор input::placeholder{
+    font-family:'Forma DJR Cyrillic Deck Reg' ;
+    color: #002B41;
+    text-indent: 17px;
+}
+.анкета .выбор{
+    display: flex;
+    gap: 15px;
+}
+.анкета .выбор2{
+    display: flex;
+    gap: 15px;
+}
+.анкета .выбор2 input::placeholder{
+    font-family:'Forma DJR Cyrillic Deck Reg' ;
+    color: #002B41;
+    text-indent: 17px;
+}
+.анкета{
+    display: flex;
+    gap: 100px;
+    margin-top: -30px;
+    flex-wrap: wrap;
+}
+.анкета img{
+    height: 300px;
+    width: 450px;
+    border-radius: 30px;
+    max-width: 100%;
+    
+}
+.lesson button{
+    height: 60px;
+    width: 285px;
+    border-radius: 30px;
+    border: 1px solid #38546280;
+    font-family:'Forma DJR Cyrillic Deck' ;
+    background-color: #FF3A35;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.кнопка p{
+    display: flex;
+    margin-left: 325px;
+    transform: translateY(-50px);
+}
+.кнопка p:nth-child(2){
+    font-family:'Forma DJR Cyrillic Deck Reg' ;
+    color: #002B41;
+    font-size: 15px;
+}
+.кнопка p:nth-child(3){
+    font-family:'Forma DJR Cyrillic Deck Reg' ;
+    font-size: 15px;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 90px 30px 90px 30px;
+    color: #333; /* Example color */
+    background-image: url("cont.png"); /* Replace with your image path */
+    background-size: contain; /* Cover the entire footer */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+  }
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    padding-bottom: 20px;
+}
+.footer-col {
+    width: 30%;
+}
+.footer-col2 {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.footer-col2 p{
+    font-family:'Forma DJR Cyrillic Deck Reg' ;
+    width: 45%;
+    line-height: 20px;
+    font-size: 14px;
+    color: #385462;
+}
+.con{
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-30px);
+    line-height: 27px;
+}
+.footer-col1 {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-direction: column;
+    margin-top: -52px;
+    height: 30%;
+}
+.footer-col1 h3{
+    font-family:'Forma DJR Cyrillic Deck' ;
+    color: #002B41;
+    font-size: 20px;
+    margin-top: 70px;
+}
+.footer-col1 p{
+    font-family:'Forma DJR Cyrillic Deck Reg' ;
+    color: #385462;
+
+
+}
+.footer-col1 p:nth-child(1){
+    font-size: 18px;
+    color: #002B41;
+
+}
+.footer-col1 p:nth-child(2){
+    font-size: 18px;
+    color: #002B41;
+
+}
+.three img{
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    margin-top: -5px;
+}
+.footer-col2 .logo img{
+    height: 40px;
+    width: 70px;
+    margin-top: -30px;
+    margin-bottom: 15px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    margin-bottom: 5px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: black;
+    line-height: 30px;
+    font-family:'Forma DJR Cyrillic Deck Reg' ;
+    font-size: 18px;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
+    gap: 67px;
+    margin-left: -119px;
+    font-family:'Forma DJR Cyrillic Deck Reg' ;
+}
+.footer-bottom p:nth-child(2){
+    font-size: 18px;
+    color: #002B41;
+}
+.footer-bottom p:nth-child(1){
+    color: #385462;
+}
+.footer-bottom1 p{
+    font-size: 18px;
+    font-family:'Forma DJR Cyrillic Deck Reg' ;
+    color: #002B41;
+    margin-left: -15px;
+    margin-top: 20px;
 }
