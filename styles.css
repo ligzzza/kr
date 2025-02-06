@@ -1,6 +1,6 @@
 /* Общие стили */
 body {
-    background-image:url('фон.jpeg'), url('фон1.png');
+    background-image:url('image/фон.jpeg'), url('image/фон1.png');
     background-repeat: no-repeat, repeat;
     background-size:cover, cover;
     background-color: #EEF5FF;
@@ -15,19 +15,19 @@ body {
 
 @font-face {
     font-family: 'Panton Rust Script SemiBold';
-    src: url('ofont.ru_Panton Rust Script.ttf') format('truetype');
+    src: url('font/ofont.ru_Panton Rust Script.ttf') format('truetype');
     font-weight: 650;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Forma DJR Cyrillic Deck';
-    src: url('forma-djr-cyrillic-deck.ttf') format('truetype');
+    src: url('font/forma-djr-cyrillic-deck.ttf') format('truetype');
     font-style: normal;
 }
 @font-face {
     font-family: 'Forma DJR Cyrillic Deck Reg';
-    src: url('forma-djr-cyrillic-deck-5.ttf') format('truetype');
+    src: url('font/forma-djr-cyrillic-deck-5.ttf') format('truetype');
     font-style: normal;
 }
 
@@ -598,7 +598,7 @@ p.тыщ{
 
 .sale{
     padding-left: 12.5rem;
-    background-image: url('фон2.png');
+    background-image: url('image/фон2.png');
     background-size: cover;
 }
 .sale h1,p{
@@ -679,7 +679,7 @@ p.тыщ{
     width: 100%;
     box-sizing: border-box;
     overflow: hidden; /* Скрываем всё, что выходит за пределы контейнера */
-    background-image: url('фон3.png');
+    background-image: url('image/фон3.png');
     background-size: cover;
 }
 .запись h1,p{
@@ -784,74 +784,74 @@ p.тыщ{
 
 /* Секция карты */
 .map-section {
-    position: relative; /* Для позиционирования дочерних элементов */
-    overflow: hidden; /* Скрыть выходящие за пределы элементы */
-    height: 950px; /* Высота секции */
+    position: relative; 
+    overflow: hidden; 
+    height: 950px; 
     padding-top: 250px;
     background-color: #EEF5FF;
 }
   
   /* Размытие сверху */
 .blur-top {
-    position: absolute; /* Абсолютное позиционирование */
-    top: -5%; /* Размещаем сверху */
+    position: absolute; 
+    top: -5%; 
     left: 0;
-    width: 100%; /* Растягиваем на всю ширину */
-    z-index: 3; /* Размытие поверх карты */
+    width: 100%; 
+    z-index: 3; 
     padding-top :250px; 
 }
   
 .blur-top img {
-    width: 100%; /* Растягиваем изображение на всю ширину */
-    height: 120%; /* Сохраняем пропорции */
+    width: 100%; 
+    height: 120%; 
 }
   
   /* Размытие снизу */
 .blur-bottom {
-    position: absolute; /* Абсолютное позиционирование */
-    bottom: 7%; /* Размещаем снизу */
+    position: absolute; 
+    bottom: 7%; 
     left: 0;
-    width: 100%; /* Растягиваем на всю ширину */
-    z-index: 3; /* Размытие поверх карты */
+    width: 100%; 
+    z-index: 3; 
 }
   
 .blur-bottom img {
-    width: 100%; /* Растягиваем изображение на всю ширину */
-    height: 200%; /* Сохраняем пропорции */
+    width: 100%; 
+    height: 200%; 
 }
   
   /* Контейнер для карты */
 .map-container {
     position: relative;
-    z-index: 2; /* Чтобы контент карты был под размытием */
+    z-index: 2; 
 }
   
   /* Фон карты */
 .map-background {
-    background-image: url('map.png');
+    background-image: url('image/map.png');
     background-size: contain;
     background-position: center;
     background-color: #EEF5FF;
-    height: 800px; /* Высота карты */
+    height: 800px; 
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    z-index: 1; /* Фон карты находится под размытием */
+    z-index: 1; 
 }
   
   /* Текстовый блок */
 .text-box {
-    position: absolute; /* Абсолютное позиционирование */
-    top: 32%; /* Отступ сверху */
-    left: 16%; /* Отступ слева */
-    background-color: rgba(255, 255, 255, 1); /* Белый фон */
-    padding: 20px 20px 0px 20px; /* Внутренние отступы */
-    border-radius: 50px; /* Скругленные углы */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
-    width: 500px; /* Ширина бокса */
-    height: 140px; /* Высота бокса */
-    overflow: hidden; /* Скрыть содержимое, выходящее за пределы */
-    z-index: 10; /* Текстовый блок поверх размытия */
+    position: absolute; 
+    top: 32%; 
+    left: 16%; 
+    background-color: rgba(255, 255, 255, 1); 
+    padding: 20px 20px 0px 20px; 
+    border-radius: 50px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px; 
+    height: 140px; 
+    overflow: hidden; 
+    z-index: 10; 
 }
   
   /* Заголовок в текстовом блоке */
@@ -865,7 +865,7 @@ p.тыщ{
 .text-box h2 {
     margin: 0;
     font-size: 47px;
-    color: #FF372A; /* Красный цвет */
+    color: #FF372A; 
     text-align: right;
     font-family:'Panton Rust Script SemiBold', sans-serif;
     margin-top: -7px;
@@ -882,13 +882,13 @@ p.тыщ{
     border-radius: 60px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 90%; /* Ширина info-box */
-    max-width: 1000px; /* Максимальная ширина */
+    width: 90%; 
+    max-width: 1000px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 150px; /* Невысокий контейнер */
-    z-index: 10; /* Информационный блок поверх размытия */
+    height: 150px; 
+    z-index: 10; 
 }
   
   /* Колонки в информационном блоке */
@@ -903,24 +903,23 @@ p.тыщ{
   
   /* Маркер на карте */
 .map-marker {
-    position: absolute; /* Абсолютное позиционирование */
-    width: 52px; /* Размер картинки */
+    position: absolute; 
+    width: 52px; 
     height: 52px;
-    color: red; /* Красный цвет фона */
-    border-radius: 20%; /* Круглая форма */
-    cursor: pointer; /* Курсор в виде указателя */
-    z-index: 15; /* Маркер поверх всех элементов */
-    /* Позиционирование (измените значения под свои нужды) */
-    top: 51%; /* Отступ сверху */
-    left: 40%; /* Отступ слева */
-    transform: translate(-50%, -50%); /* Центрирование */
+    color: red; 
+    border-radius: 20%; 
+    cursor: pointer; 
+    z-index: 15; 
+    top: 51%; 
+    left: 40%; 
+    transform: translate(-50%, -50%); 
 }
   
   /* Кнопки соцсетей и мессенджеров */
 .social-buttons, .messenger-buttons {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Расстояние между кнопками */
+    gap: 10px; 
     margin-top: 10px;
 }
   
@@ -968,22 +967,22 @@ p.тыщ{
   
   /* Ссылка с изображением */
 .map-link {
-    display: inline-block; /* Чтобы ссылка вела себя как блок */
-    background-color: transparent; /* Прозрачный фон */
-    border: none; /* Убираем границу */
-    padding: 0; /* Убираем внутренние отступы */
-    cursor: pointer; /* Курсор в виде указателя */
-    text-decoration: none; /* Убираем подчеркивание */
+    display: inline-block; 
+    background-color: transparent; 
+    border: none;
+    padding: 0; 
+    cursor: pointer;
+    text-decoration: none; 
 }
   
 .map-link img {
-    width: 110px; /* Увеличиваем размер картинки */
-    height: 110px; /* Увеличиваем размер картинки */
-    transition: transform 0.3s ease; /* Плавное увеличение при наведении */
+    width: 110px; 
+    height: 110px; 
+    transition: transform 0.3s ease; 
 }
   
 .map-link:hover img {
-    transform: scale(1.2); /* Увеличиваем картинку при наведении */
+    transform: scale(1.2); 
 }
   
   /* Кнопка на карте */
@@ -1006,9 +1005,9 @@ p.тыщ{
 footer {
     text-align: center;
     padding: 0px 30px 0px 30px;
-    background-image: url("cont.png"); /* Replace with your image path */
-    background-size: contain; /* Cover the entire footer */
-    background-position: center; /* Center the image */
+    background-image: url("image/cont.png"); 
+    background-size: contain; 
+    background-position: center; 
     background-repeat: no-repeat;
     background-color: white;
   }
